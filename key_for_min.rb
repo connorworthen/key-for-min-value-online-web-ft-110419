@@ -5,5 +5,5 @@ name_hash = {
 }
 
 def key_for_min_value(name_hash)
-  name_hash.key(name_hash.values.min)
+  name_hash.min_by { |k,v| v }
 end
